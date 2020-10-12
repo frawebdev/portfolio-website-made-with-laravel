@@ -1,0 +1,88 @@
+/*variables*/
+
+$blue: #193f6e;
+$light-blue: #7FBDE4;
+$pink: #da4167;
+$green: #7fb800;
+
+$show-card-breakpoint: 850px;
+
+/*mixins*/
+
+@mixin links($color) {
+
+    text-decoration: none;
+    color: $color;
+
+    &:hover{
+        color: saturate($color, 50%);
+    }
+    
+}
+
+/*general*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #193f6e;
+}
+
+main{
+    height: 100vh;
+}
+
+a{
+    @include links($pink);
+
+    &.contacts{
+        font-size: 25px;
+    }
+}
+
+/*made-up classes*/
+
+.first-letter{
+    color: $light-blue;
+}
+
+.btn-color{
+    color: white;
+    background-color: $pink;
+
+    &:hover{
+        color: white;
+        background-color: saturate($pink, 50%);
+    }
+}
+
+.show-card{
+    width: 60%;
+}
+
+@media(max-width: $show-card-breakpoint){
+    .show-card{
+        width: 90%;
+    }
+}
+
+.badge-color{
+    color: white;
+    background-color: $pink;
+    &:hover{
+        color: white;
+        background-color: saturate($pink, 50%);
+    }
+}
+
+.navigation{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    color: $pink;
+}
+

@@ -1,0 +1,76 @@
+/*variables*/
+
+/*mixins*/
+
+/*general*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #193f6e;
+}
+
+main {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #da4167;
+}
+
+a:hover {
+  color: #ff1c54;
+}
+
+a.contacts {
+  font-size: 25px;
+}
+
+/*made-up classes*/
+
+.first-letter {
+  color: #7FBDE4;
+}
+
+.btn-color {
+  color: white;
+  background-color: #da4167;
+}
+
+.btn-color:hover {
+  color: white;
+  background-color: #ff1c54;
+}
+
+.show-card {
+  width: 60%;
+}
+
+@media (max-width: 850px) {
+  .show-card {
+    width: 90%;
+  }
+}
+
+.badge-color {
+  color: white;
+  background-color: #da4167;
+}
+
+.badge-color:hover {
+  color: white;
+  background-color: #ff1c54;
+}
+
+.navigation {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  color: #da4167;
+}
+
